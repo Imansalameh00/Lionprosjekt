@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes Cards</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="lionseite2.css">
+
+                <!-- Boxicons Css-->
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" href="stylesheet">
+
+</head>
+<body>
+    <div class="row">
+        <div class="card circle" >
+            <a href="questionsSite/question1.html" class="redirect-button">spørsmål</a>
+        </div>
+        <div class="card triangle" >
+            <a href="questionsSite/question2.html" class="redirect-button">spørsmål</a>
+        </div>
+        <div class="card circle">
+            <a href="questionsSite/question3.html" class="redirect-button">spørsmål</a>
+        </div>
+        <div class="card triangle" onclick="showPopup('Wie viele Planeten hat unser Sonnensystem?', ['7', '8', '9', '10'])">
+            <a href="questionsSite/question4.html" class="redirect-button">spørsmål</a>
+        </div>
+        <div class="card circle" >
+            <a href="questionsSite/question5.html" class="redirect-button">spørsmål</a>
+        </div>
+        <div class="card triangle" onclick="showPopup('Wie viele Planeten hat unser Sonnensystem?', ['7', '8', '9', '10'])">
+            <a href="questionsSite/question6.html" class="redirect-button">spørsmål</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card rectangle" >
+            <a href="questionsSite/question7.html" class="redirect-button">spørsmål</a>
+        </div>
+        <div class="card circle" >
+            <a href="questionsSite/question8.html" class="redirect-button">spørsmål</a>
+        </div>
+
+        <div class="row">
+            <div class="card rectangle">
+                <a href="questionsSite/question9.html" class="redirect-button">spørsmål</a>
+            </div>
+            <div class="card triangle">
+                <a href="questionsSite/question10.html" class="redirect-button">spørsmål</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card rectangle">
+                <a href="questionsSite/question11.html" class="redirect-button">spørsmål</a>
+            </div>
+            <div class="card circle" >
+                <a href="questionsSite/question12.html" class="redirect-button">spørsmål</a>
+            </div>
+    
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="hidePopup()">&times;</span>
+                <h2 id="question"></h2>
+                <div id="answers"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
