@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Globale Stile */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .button-container {
+    margin-bottom: 30px;
+  }
+  .bb:hover{
+    background-color: red; /* Set desired hover color */
+  }
+  
+  .row {
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .card-text {
+    color: #666;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #333;
+  }
+  .card-img-top {
+    max-width: 50%;
+    height: 30px;;
+  }  
+  .card.red:hover {
+    background-color: red; /* Set hover color for red cards */
+  }
+
+  .card.green:hover {
+    background-color: green; /* Set hover color for green cards */
+  }
+  
+
