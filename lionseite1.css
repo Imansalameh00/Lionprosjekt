@@ -26,7 +26,7 @@ body {
 }
 
 .profile-img {
-    width: 350px; /* Breite des Bildes */
+    width: 400px; /* Breite des Bildes */
     height: auto;
     display: block;
     margin: 0 auto;

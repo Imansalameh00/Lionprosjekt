@@ -15,6 +15,13 @@ body {
     flex-direction: column;
     align-items: first  baseline;
 }
+.card.red:hover {
+    background-color: red; /* Set hover color for red cards */
+  }
+
+  .card.green:hover {
+    background-color: green; /* Set hover color for green cards */
+  }
 
 
 .button-container {

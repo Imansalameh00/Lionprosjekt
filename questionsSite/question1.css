@@ -16,6 +16,9 @@ body {
   .button-container {
     margin-bottom: 30px;
   }
+  .bb:hover{
+    background-color: red; /* Set desired hover color */
+  }
   
   .row {
     margin-bottom: 30px;
@@ -47,5 +50,12 @@ body {
     max-width: 50%;
     height: 30px;;
   }  
+  .card.red:hover {
+    background-color: red; /* Set hover color for red cards */
+  }
+
+  .card.green:hover {
+    background-color: green; /* Set hover color for green cards */
+  }
   
 

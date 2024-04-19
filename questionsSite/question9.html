@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lion Design</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="question1.css">
+    <link rel="stylesheet" href="question9.css">
     <!-- Boxicons Css-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
      <!--bootstrab-->
@@ -16,7 +16,7 @@
     <!-- Erste Row für den Button -->
     <div class="row mt-3 button-container">
       <div class="col-12 text-center">
-        <a href="file:///C:/Users/iman/Desktop/LionProject/lop.html" class="btn btn-primary btn-lg">gå til forsiden</a>
+          <a href="C:\Users\Iman\Desktop\LionProject\lop.html" class="btn btn-primary btn-lg">gå til forsiden</a>
       </div>
   </div>
   
@@ -25,37 +25,55 @@
     <div class="row justify-content-center mt-4">
       <div class="col-md-3">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body" id="playAudio">
             <h5 class="card-title text-center">Hvilke farge starter med bokstaven "R"?</h5>
-            <img src="C:\Users\admin\OneDrive - Frankfurt UAS\Desktop\LionProject\bicture\question9\rr.jpg" class="card-img-top img-fluid" alt="Bildbeschreibung">
+            <img src="C:\Users\Iman\Desktop\LionProject\bicture\question9\rr.jpg" class="card-img-top img-fluid" alt="Bildbeschreibung">
           </div>
         </div>
       </div>
   </div>
 
+  <audio id="myAudio">
+    <source src="file:///C:/Users/Iman/Desktop/LionProject/voice/question9/9.m4a" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<audio id="myAudio1">
+  <source src="file:///C:/Users/Iman/Desktop/LionProject/voice/yesNo/no.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio2">
+<source src="file:///C:/Users/Iman/Desktop/LionProject/voice/yesNo/yes.mp3.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<audio id="myAudio3">
+  <source src="file:///C:/Users/Iman/Desktop/LionProject/voice/yesNo/no.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+
+
     <!-- Dritte Row für die Karten -->
     <div class="row mt-3">
 
       <div class="col-md-4">
-          <div class="card bg-primary">
-              <div class="card-body">
-                <h3 class="text-center text-white">blå</h3>
+          <div class="card red">
+              <div class="card-body" id="playAudio1">
+                <h3 class="text-center">blå</h3>
               </div>
           </div>
       </div>
   
       <div class="col-md-4">
-          <div class="card bg-danger">
-              <div class="card-body">
-                <h3 class="text-center text-white">rød</h3>
+          <div class="card green">
+              <div class="card-body" id="playAudio2">
+                <h3 class="text-center ">rød</h3>
             </div>
           </div>
       </div>
   
       <div class="col-md-4" class="red">
-          <div class="card bg-warning">
-              <div class="card-body">
-                <h3 class="text-center text-white">gul</h3>
+          <div class="card  red">
+              <div class="card-body" id="playAudio3">
+                <h3 class="text-center ">gul</h3>
             </div>
           </div>
       </div>
@@ -64,6 +82,10 @@
 
   <!-- Verlinke das Bootstrap 4 JavaScript-Plugin (optional) -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--javaScript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="../main.js"></script>
 </body>
 
 </html>

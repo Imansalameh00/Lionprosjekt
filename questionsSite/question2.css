@@ -40,3 +40,11 @@ body {
     background-color: blue;
 }
 
+.card.red:hover {
+    background-color: red; /* Set hover color for red cards */
+  }
+
+  .card.green:hover {
+    background-color: green; /* Set hover color for green cards */
+  }
+

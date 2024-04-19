@@ -6,6 +6,27 @@
     justify-content: space-around; /* Ändere zu space-between für gleichmäßige Abstände */
 }
 
+
+.card.circle {
+    border-radius: 50%;
+}
+
+.card.blue {
+    background-color: blue;
+}
+
+.card.red {
+    background-color: red;
+}
+
+.card.green {
+    background-color: green;
+}
+
+.card.yellow {
+    background-color: yellow;
+}
+
 .card {
     width: 200px;
     height: 200px;
@@ -27,7 +48,30 @@
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 173.21px solid #ff4500; /* Orange */
+    border-bottom: 173.21px solid red; /* Orange */
+}
+.triangle1 {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 173.21px solid blue; /* Orange */
+}
+
+.triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 173.21px solid green; /* Orange */
+}
+
+.triangle3 {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 173.21px solid yellow; /* Orange */
 }
 
 .rectangle {
@@ -37,35 +81,6 @@
 }
 
 
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-.popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
 .button-container {
     margin-top: 20px;
 }
@@ -73,7 +88,7 @@
 .redirect-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #FF0000; /* Rot */
+    background-color:black; /* Rot */
     color: white;
     text-decoration: none;
     border: none;
@@ -84,7 +99,9 @@
 .redirect-button:hover {
     background-color: #BF0000; /* Dunkleres Rot im Hover-Zustand */
 }
-
+.circle1{
+    background: #FF0000;
+}
 
 
 
