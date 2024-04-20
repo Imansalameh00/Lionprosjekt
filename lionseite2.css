@@ -1,107 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes Cards</title>
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+    <!-- CSS -->
+    <link rel="stylesheet" href="lionseite2.css"> <!-- Erstatt denne med lenken til din CSS-fil -->
 
-.row {
-    display: flex;
-    justify-content: space-around; /* Ändere zu space-between für gleichmäßige Abstände */
-}
+    <!-- Boxicons Css-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap -->
 
+    <!-- Importert CSS fra Google Fonts og egendefinerte stiler -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .row {
+            display: flex;
+            justify-content: space-around; /* Sentrer innholdet horisontalt */
+            flex-wrap: wrap; /* La innholdet vikle seg og gå til neste linje om nødvendig */
+        }
 
-.card.circle {
-    border-radius: 50%;
-}
+        .card.circle.blue {
+            background-color: blue;
+        }
 
-.card.blue {
-    background-color: blue;
-}
+        .card.circle.yellow {
+            background-color: yellow;
+        }
 
-.card.red {
-    background-color: red;
-}
+        .card.rectangle.blue {
+            background-color: blue;
+        }
 
-.card.green {
-    background-color: green;
-}
+        .card.rectangle.red {
+            background-color: red;
+        }
 
-.card.yellow {
-    background-color: yellow;
-}
+        .card.triangle.red {
+            border-bottom-color: red;
+        }
 
-.card {
-    width: 200px;
-    height: 200px;
-    border: 1px solid #ccc;
-    margin: 20px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+        .card.triangle.yellow {
+            border-bottom-color: yellow;
+        }
 
-.circle {
-    border-radius: 50%;
-    background-color: #ffcc00; /* Gelb */
-}
+        .card {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+            margin: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 173.21px solid red; /* Orange */
-}
-.triangle1 {
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 173.21px solid blue; /* Orange */
-}
+        .circle {
+            border-radius: 50%;
+            background-color: #ffcc00; /* Gelb */
+        }
 
-.triangle2 {
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 173.21px solid green; /* Orange */
-}
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 173.21px solid yellow; /* Orange */
+        }
 
-.triangle3 {
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 173.21px solid yellow; /* Orange */
-}
+        .triangle1 {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 173.21px solid red; /* Orange */
+        }
 
-.rectangle {
-    width: 150px;
-    height: 100px;
-    background-color: #00bfff; /* Blau */
-}
+        .triangle2 {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 173.21px solid red; /* Orange */
+        }
 
+        .triangle3 {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 173.21px solid red; /* Orange */
+        }
 
-.button-container {
-    margin-top: 20px;
-}
+        .rectangle {
+            width: 150px;
+            height: 100px;
+            background-color: #00bfff; /* Blau */
+        }
 
-.redirect-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color:black; /* Rot */
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 25px; /* Runder Button mit einem Radius von 25px */
-    transition: background-color 0.3s;
-}
+        .button-container {
+            margin-top: 20px;
+        }
 
-.redirect-button:hover {
-    background-color: #BF0000; /* Dunkleres Rot im Hover-Zustand */
-}
-.circle1{
-    background: #FF0000;
-}
+        .redirect-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color:black; /* Rot */
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 25px; /* Runder Button mit einem Radius von 25px */
+            transition: background-color 0.3s;
+        }
 
+        .redirect-button:hover {
+            background-color: #BF0000; /* Dunkleres Rot im Hover-Zustand */
+        }
 
-
+        .circle1{
+            background: #FF0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="card circle blue"></div>
+        <div class="card circle yellow"></div>
+        <div class="card rectangle blue"></div>
+        <div class="card rectangle red"></div>
+        <div class="card triangle red"></div>
+        <div class="card triangle yellow"></div>
+    </div>
+</body>
+</html>

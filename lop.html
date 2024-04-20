@@ -5,79 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shapes Cards</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="lionseite2.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="lionseite2.css">
 
-                <!-- Boxicons Css-->
+    <!-- Boxicons Css-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap -->
 
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" href="stylesheet">
-     <!--bootstrab-->
- <!--bootstrab-->
+    <!-- JavaScript -->
+    <script>
+        // JavaScript function to generate random question URLs
+        function generateRandomQuestionUrl() {
+            var questions = [
+                "questionsSite/question1.html",
+                "questionsSite/question2.html",
+                "questionsSite/question3.html",
+                "questionsSite/question4.html",
+                "questionsSite/question5.html",
+                "questionsSite/question6.html",
+                "questionsSite/question7.html",
+                "questionsSite/question8.html",
+                "questionsSite/question9.html",
+                "questionsSite/question10.html",
+                "questionsSite/question11.html",
+                "questionsSite/question12.html",
+                "questionsSite/question13.html",
+                "questionsSite/question14.html",
+                "questionsSite/question15.html",
+                // Add more question URLs here as needed
+            ];
+
+            // Generate a random index
+            var randomIndex = Math.floor(Math.random() * questions.length);
+
+            // Return a random question URL
+            return questions[randomIndex];
+        }
+    </script>
 </head>
 <body>
-
-
-    <div class="row-4">
-        <div class="card circle yellow" >
-            <a href="questionsSite/question1.html" class="redirect-button">spørsmål</a>
+    <div class="row">
+        <div class="card circle blue" onclick="location.href=generateRandomQuestionUrl()">
+            <a class="redirect-button">spørsmål</a>
         </div>
-        <div class="card triangle " >
-            <a href="questionsSite/question2.html" class="redirect-button">spørsmål</a>
+        <div class="card circle yellow" onclick="location.href=generateRandomQuestionUrl()">
+            <a class="redirect-button">spørsmål</a>
         </div>
-        <div class="card circle green" >
-            <a href="questionsSite/question3.html" class="redirect-button">spørsmål</a>
+        <div class="card rectangle red" onclick="location.href=generateRandomQuestionUrl()">
+            <a class="redirect-button">spørsmål</a>
         </div>
-        <div class="card triangle1" >
-            <a href="questionsSite/question4.html" class="redirect-button">spørsmål</a>
-        </div>
-        <div class="card rectangle red">
-            <a href="questionsSite/question5.html" class="redirect-button">spørsmål</a>
-        </div>
-      
     </div>
-
-    <div class="row-4">
-
-        <div class="card triangle2" >
-            <a href="questionsSite/question6.html" class="redirect-button">spørsmål</a>
+    <div class="row">
+        <div class="card rectangle blue" onclick="location.href=generateRandomQuestionUrl()">
+            <a class="redirect-button">spørsmål</a>
         </div>
-
-        <div class="card rectangle green" >
-            <a href="questionsSite/question7.html" class="redirect-button">spørsmål</a>
+        <div class="card triangle red" onclick="location.href=generateRandomQuestionUrl()">
+            <a class="redirect-button">spørsmål</a>
         </div>
-        <div class="card circle red" >
-            <a href="questionsSite/question8.html" class="redirect-button">spørsmål</a>
-        </div>
-
-        <div class="card rectangle blue">
-             <a href="questionsSite/question9.html" class="redirect-button">spørsmål</a>
-        </div>
-        <div class="card triangle3">
-              <a href="questionsSite/question10.html" class="redirect-button">spørsmål</a>
-        </div>
-        
-
-        <div class="row-4">
-
-            <div class="card rectangle yellow">
-                <a href="questionsSite/question11.html" class="redirect-button">spørsmål</a>
-            </div>
-
-            <div class="card circle green" >
-                <a href="questionsSite/question12.html" class="redirect-button">spørsmål</a>
-            </div>
-
-            <div class="card rectangle blue" >
-                <a href="questionsSite/question12.html" class="redirect-button">spørsmål</a>
-            </div>
-
-            <div class="card triangle " >
-                <a href="questionsSite/question2.html" class="redirect-button">spørsmål</a>
-            </div>
-            <div class="card circle blue" >
-                <a href="questionsSite/question12.html" class="redirect-button">spørsmål</a>
-            </div>
-
+        <div class="card triangle yellow" onclick="location.href=generateRandomQuestionUrl()">
+            <a class="redirect-button">spørsmål</a>
         </div>
     </div>
 </body>
