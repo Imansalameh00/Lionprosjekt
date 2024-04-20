@@ -13,6 +13,7 @@
     
     <!-- Bootstrap -->
 
+
     <!-- JavaScript -->
     <script>
         // JavaScript function to generate random question URLs
@@ -45,27 +46,40 @@
     </script>
 </head>
 <body>
+
     <div class="row">
-        <div class="card circle blue" onclick="location.href=generateRandomQuestionUrl()">
-            <a class="redirect-button">spørsmål</a>
+        <div class="col-12">
+            <div class="row" class="col-md-4">
+                <div class="card circle blue" onclick="location.href=generateRandomQuestionUrl()">
+                    <a class="redirect-button">spørsmål</a>
+                </div>
+                <div class="card circle yellow" onclick="location.href=generateRandomQuestionUrl()">
+                    <a class="redirect-button">spørsmål</a>
+                </div>
+                <div class="card rectangle red" onclick="location.href=generateRandomQuestionUrl()">
+                    <a class="redirect-button">spørsmål</a>
+                </div>
+            </div>
+            <div class="row" class="col-md-4">
+                <div class="card rectangle blue" onclick="location.href=generateRandomQuestionUrl()">
+                    <a class="redirect-button">spørsmål</a>
+                </div>
+                <div class="card triangle red" onclick="location.href=generateRandomQuestionUrl()">
+                    <a class="redirect-button">spørsmål</a>
+                </div>
+                <div class="card triangle yellow" onclick="location.href=generateRandomQuestionUrl()">
+                    <a class="redirect-button">spørsmål</a>
+                </div>
+            </div>
+        
+    
         </div>
-        <div class="card circle yellow" onclick="location.href=generateRandomQuestionUrl()">
-            <a class="redirect-button">spørsmål</a>
-        </div>
-        <div class="card rectangle red" onclick="location.href=generateRandomQuestionUrl()">
-            <a class="redirect-button">spørsmål</a>
+        <div class="row">
+            <div class="button-container" >
+                <a href="ende.html" class="redirect-button">FANT TEIGER!!</a>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="card rectangle blue" onclick="location.href=generateRandomQuestionUrl()">
-            <a class="redirect-button">spørsmål</a>
-        </div>
-        <div class="card triangle red" onclick="location.href=generateRandomQuestionUrl()">
-            <a class="redirect-button">spørsmål</a>
-        </div>
-        <div class="card triangle yellow" onclick="location.href=generateRandomQuestionUrl()">
-            <a class="redirect-button">spørsmål</a>
-        </div>
-    </div>
+
 </body>
 </html>
