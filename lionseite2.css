@@ -14,13 +14,9 @@
     <!-- Importert CSS fra Google Fonts og egendefinerte stiler -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        /* Legg til bakgrunnsbilde på body-elementet */
-            body {
-                background-image: url('bicture/Ferdig/lop.png');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
+    <body style="background-color: #D2B48C;">
+    <!-- Innholdet i siden din her -->
+
 
         /* Legg til dine eksisterende CSS-stiler her */
         .button-container {
