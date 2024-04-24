@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +16,12 @@
 
     <!-- JavaScript -->
     <script>
+        // Global variable to keep track of shown question URLs
+        var shownQuestions = [];
+    
         // JavaScript function to generate random question URLs
-        function generateRandomQuestionUrl() {
+        function generateRandomQuestionUrl(shape, color) {
+            // Define question URLs based on shape and color
             var questions = [
                 "questionsSite/question1.html",
                 "questionsSite/question2.html",
@@ -26,7 +29,6 @@
                 "questionsSite/question4.html",
                 "questionsSite/question5.html",
                 "questionsSite/question6.html",
-                "questionsSite/question7.html",
                 "questionsSite/question8.html",
                 "questionsSite/question9.html",
                 "questionsSite/question10.html",
@@ -34,41 +36,68 @@
                 "questionsSite/question12.html",
                 "questionsSite/question13.html",
                 "questionsSite/question14.html",
-               
                 // Add more question URLs here as needed
             ];
-
+    
+            // If shape is rectangle and color is red or blue, show question7.html
+            if (shape === 'rectangle' && (color === 'red' || color === 'blue')) {
+                return "questionsSite/question7.html";
+            }
+    
+            // Filter out shown questions
+            var availableQuestions = questions.filter(function(question) {
+                return !shownQuestions.includes(question);
+            });
+    
+            // If all questions have been shown, reset shownQuestions array
+            if (availableQuestions.length === 0) {
+                shownQuestions = [];
+                availableQuestions = questions;
+            }
+    
             // Generate a random index
-            var randomIndex = Math.floor(Math.random() * questions.length);
-
-            // Return a random question URL
-            return questions[randomIndex];
+            var randomIndex = Math.floor(Math.random() * availableQuestions.length);
+    
+            // Get the chosen question URL
+            var chosenQuestion = availableQuestions[randomIndex];
+    
+            // Store the shown question URL
+            shownQuestions.push(chosenQuestion);
+    
+            // Return the chosen question URL
+            return chosenQuestion;
         }
     </script>
+
 </head>
-<body>
+<body style="background-image: url('bicture/Ferdig/lop3.png'); background-size: 100% auto; background-position: center; background-repeat: no-repeat;">
+    <!-- Innholdet i siden din her -->
+</body>
+
+
+
 
     <div class="row">
         <div class="col-12">
             <div class="row" class="col-md-4">
-                <div class="card circle blue" onclick="location.href=generateRandomQuestionUrl()">
+                <div class="card circle blue" onclick="location.href=generateRandomQuestionUrl('circle')">
                     <a class="redirect-button">spørsmål</a>
                 </div>
-                <div class="card circle yellow" onclick="location.href=generateRandomQuestionUrl()">
+                <div class="card circle yellow" onclick="location.href=generateRandomQuestionUrl('circle')">
                     <a class="redirect-button">spørsmål</a>
                 </div>
-                <div class="card rectangle red" onclick="location.href=generateRandomQuestionUrl()">
+                <div class="card rectangle red" onclick="location.href=generateRandomQuestionUrl('rectangle')">
                     <a class="redirect-button">spørsmål</a>
                 </div>
             </div>
             <div class="row" class="col-md-4">
-                <div class="card rectangle blue" onclick="location.href=generateRandomQuestionUrl()">
+                <div class="card rectangle blue" onclick="location.href=generateRandomQuestionUrl('rectangle')">
                     <a class="redirect-button">spørsmål</a>
                 </div>
-                <div class="card triangle red" onclick="location.href=generateRandomQuestionUrl()">
+                <div class="card triangle red" onclick="location.href=generateRandomQuestionUrl('triangle')">
                     <a class="redirect-button">spørsmål</a>
                 </div>
-                <div class="card triangle yellow" onclick="location.href=generateRandomQuestionUrl()">
+                <div class="card triangle yellow" onclick="location.href=generateRandomQuestionUrl('triangle')">
                     <a class="redirect-button">spørsmål</a>
                 </div>
             </div>
@@ -76,12 +105,6 @@
         <div class="row">
             <div class="button-container" >
                 <a href="ende.html" class="redirect-button">FANT TEIGER!!</a>
-            </div>
-        </div>
-        <!-- Plasser bildet av tigeren her -->
-        <div class="row" justify-content-center mt-3>
-            <div class="col-md-4">
-                <img src="lionn.jpg" class="card-img-top img-fluid" alt="Bilde" style="max-width: 20%; height: auto;">
             </div>
         </div>
     </div>
